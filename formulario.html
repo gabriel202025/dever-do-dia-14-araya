@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    
+</head>
+<body>
+    <form action="/submit" method="post">
+        <h1>Formulário</h1>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="data_nascimento">Data de Nascimento</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+            <label for="curso">Curso</label>
+            <select id="curso" name="curso" required>
+                <option value="ads">ADS</option>
+            </select>
+
+            <label>Semestre</label>
+            <input type="radio" id="1sem" name="semestre" value="1" required>
+            <label for="1sem">1º</label>
+
+            <input type="radio" id="2sem" name="semestre" value="2">
+            <label for="2sem">2º</label>
+
+            <input type="radio" id="3sem" name="semestre" value="3">
+            <label for="3sem">3º</label>
+
+            <input type="radio" id="4sem" name="semestre" value="4">
+            <label for="4sem">4º</label>
+
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>Trabalha?</label>
+            <input type="radio" id="trabalha_sim" name="trabalha" value="sim" required>
+            <label for="trabalha_sim">Sim</label>
+            <input type="radio" id="trabalha_nao" name="trabalha" value="nao">
+            <label for="trabalha_nao">Não</label>
+
+            <label for="local_trabalho">Local de trabalho</label>
+            <input type="text" id="local_trabalho" name="local_trabalho" placeholder="Informe o local de trabalho">
+
+            <label for="experiencia">Descreva sua experiência</label>
+            <textarea id="experiencia" name="experiencia" rows="4" placeholder="Escreva sobre sua experiência profissional"></textarea>
+        </fieldset>
+
+        <button type="submit">Gravar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
